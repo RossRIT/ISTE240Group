@@ -1,0 +1,116 @@
+html { background-color: #F8F4E3;}
+body { margin: 0;}
+
+/*navigation bar*/
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: right;
+    background-color: gray;
+    /* change for scheme */
+}
+  
+nav li {
+    display: inline;
+}
+
+nav li a, .dropbtn {
+    /*dropdown button*/
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover{
+    /*color of background when hovered*/
+    background-color: #612940;
+}
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*homepage title and overview*/
+.title { 
+    text-align: center; 
+    padding: 5%;
+}
+
+.overview {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+/*content sections*/
+.mid {
+    margin: 5%;
+}
+
+.secheader {
+    background-color: gray;
+    width: 20%;
+    text-align: center;
+    padding: 2%;
+    margin: 2%;
+}
+
+.section-container {
+    display: grid;
+    gap: 5%;
+    /* dont use auto -> longer titles for sections */
+    grid-template-columns: 30% 30% 30%;
+}
+
+.section {
+    background-color: lightblue;
+    padding: 15%;
+}
+
+.questions {
+    margin-top: 5%;
+}
+
+.quest {
+    text-align: center;
+    background-color: lightblue;
+    padding: 15%;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+    background-color: gray;
+}
+  
+#others { line-height: 1.5em; }
