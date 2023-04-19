@@ -1,5 +1,31 @@
-html { background-color: #F8F4E3;}
+html { 
+    background-color: #F8F4E3;
+    color: #031927;
+}
 body { margin: 0;}
+
+/*fonts*/
+
+/*title weight*/
+@font-face {
+    font-family: circularStd;
+    src: url(assets/fonts/circularstdblack.ttf);
+    font-weight: bolder;
+}
+
+/*heading + subheading weight*/
+@font-face {
+    font-family: circularStd;
+    src: url(assets/fonts/circularstdbold.ttf);
+    font-weight: bold;
+}
+
+/*body weight*/
+@font-face {
+    font-family: circularStd;
+    src: url(assets/fonts/circularstdmedium.ttf);
+    font-weight: normal;
+}
 
 /*navigation bar*/
 
@@ -9,7 +35,9 @@ nav ul {
     padding: 0;
     overflow: hidden;
     text-align: right;
-    background-color: gray;
+    background-color: #417B5A;
+    color: #F8F4E3;
+    font-family: circularStd;
     /* change for scheme */
 }
   
@@ -29,6 +57,7 @@ nav li a, .dropbtn {
 li a:hover, .dropdown:hover .dropbtn, .dropdown-content a:hover{
     /*color of background when hovered*/
     background-color: #612940;
+    border-radius: 25px;
 }
   
 li.dropdown {
@@ -38,9 +67,10 @@ li.dropdown {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: gray;
+    background-color: #9D6381;
     min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 0 0 25px 25px;
     z-index: 1;
 }
   
@@ -57,13 +87,27 @@ li.dropdown {
 
 /*homepage title and overview*/
 .title { 
+    font-family: circularStd;
+    font-weight: bolder;
+    color: #612940;
+    font-size: 64px;
     text-align: center; 
-    padding: 5%;
+    padding: 2.5%;
+}
+
+hr {
+    margin: 2% 10%;
+    border: 5px solid #417B5A;
+    border-radius: 25px;
 }
 
 .overview {
+    font-family: circularStd;
+    font-weight: normal;
+    color: #031927;
+    font-size: 16px;
     width: 60%;
-    text-align: center;
+    text-align: left;
     margin: auto;
 }
 
@@ -73,7 +117,12 @@ li.dropdown {
 }
 
 .secheader {
-    background-color: gray;
+    background-color: #612940;
+    border-radius: 65px;
+    font-family: circularStd;
+    font-weight: normal;
+    color: #F8F4E3;
+    font-size: 36px;
     width: 20%;
     text-align: center;
     padding: 2%;
@@ -88,7 +137,12 @@ li.dropdown {
 }
 
 .section {
-    background-color: lightblue;
+    background-color: #9D6381;
+    border-radius: 65px;
+    font-family: circularStd;
+    font-weight: normal;
+    color: #F8F4E3;
+    font-size: 24px;
     padding: 15%;
 }
 
