@@ -152,7 +152,10 @@ hr {
 
 .quest {
     text-align: center;
-    background-color: lightblue;
+    background-color: #9D6381;
+    border-radius: 65px;
+    font-family: circularStd;
+    color: #F8F4E3;
     padding: 15%;
 }
 
@@ -164,7 +167,11 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding: 5%;
-    background-color: gray;
+    background-color: #417B5A;
+    font-family: circularStd;
+    color: #F8F4E3;
 }
   
-#others { line-height: 1.5em; }
+#others { 
+    line-height: 1.5em; 
+}
