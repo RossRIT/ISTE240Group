@@ -8,35 +8,9 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#start">Getting Started</a></li>
-            <li class="dropdown">
-                <a class="dropbtn">Basics</a>
-                <div class="dropdown-content">
-                    <a href="#">Beginner Commands</a>
-                    <a href="#">Directory and File Management</a>
-                    <a href="#">Permissions</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a class="dropbtn">Texts</a>
-                <div class="dropdown-content">
-                    <a href="#">Piping and Filters</a>
-                    <a href="#">Text Editors</a>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a class="dropbtn">References</a>
-                <div class="dropdown-content">
-                    <a href="#">Quizzes</a>
-                    <a href="#">Index</a>
-                    <a href="#">About the Team</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+    <?php
+	    include("assets/php/nav.php");
+    ?>
 
     <div class="top">
         <h1 class="title">JALAR UX Tutorial Webpage</h1>
@@ -70,29 +44,8 @@
         </div>
     </div>
 
-    <footer>
-        <div id="mailinglist">
-            <strong>Mailing List Subscription </strong>
-            <p><label>Your Name<br>
-                <input type="text" name="user" autofocus> 
-                </label>
-            </p>
-            <p>
-                <label>Email<br>
-                <input type ="email" name = "email">
-                </label>
-            </p>
-            <label><input type="checkbox" name = "checked[]" value = "1"> I agree to Terms of Service and Privacy Policy</label> <br>
-            <input type="submit" value = "Subscribe">
-        </div>
-        <div id="others">
-        <strong>Contact Us:</strong> <br>
-            Email: <a href="mailto:" style="color: #778DA9;">++++</a> <br>
-            Discord: ++++ <br> <br>
-        <strong>Other Connections:</strong> <br>
-            <a href="other/reference.html">Resources</a> <br>
-            <a href="other/reference.html">Quizzes</a>
-        </div>
-    </footer>
+    <?php
+	    include("assets/php/footer.php");
+    ?>
 </body>
 </html>
