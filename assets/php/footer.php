@@ -22,3 +22,5 @@
             <a href="other/reference.html">Quizzes</a>
         </div>
     </footer>
+    </body>
+</html>
