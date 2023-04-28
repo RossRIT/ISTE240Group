@@ -1,6 +1,6 @@
 <?php
     $title = "Quizzes";
-    $path = "../";
+    $path = "../quizzes/index.php";
     $css = "../assets/css/styles.css";
 
     include("../assets/php/headnav.php");
@@ -11,7 +11,7 @@
     </div>
 
     <div class="mid">
-        <div class="secheader">Topics</div>
+        <div class="secheader ">Topics</div>
         <div class="section-container">
             <!-- TODO add background images + links -->
             <div class="section">Getting Started</div>

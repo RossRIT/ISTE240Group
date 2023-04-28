@@ -11,27 +11,32 @@
 <body>
 <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#start">Getting Started</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="start.php">Getting Started</a></li>
             <li class="dropdown">
                 <a class="dropbtn">Basics</a>
                 <div class="dropdown-content">
-                    <a href="#">Beginner Commands</a>
-                    <a href="#">Directory and File Management</a>
-                    <a href="#">Permissions</a>
+                    <a href="basics/commands.php">Beginner Commands</a>
+                    <a href="basics/dirnfile.php">Directory and File Management</a>
+                    <a href="basics/permissions.php">Permissions</a>
                 </div>
             </li>
             <li class="dropdown">
                 <a class="dropbtn">Texts</a>
                 <div class="dropdown-content">
-                    <a href="#">Piping and Filters</a>
+<<<<<<< HEAD
+                    <a href="pipenfilter.php">Piping and Filters</a>
                     <a href="#">Text Editors</a>
+=======
+                    <a href="texts/pipenfilters.php">Piping and Filters</a>
+                    <a href="texts/editors.php">Text Editors</a>
+>>>>>>> 48351b495d7995ea5e171b2b16395e04a1cadb49
                 </div>
             </li>
             <li class="dropdown">
                 <a class="dropbtn">References</a>
                 <div class="dropdown-content">
-                    <a href="#">Quizzes</a>
+                    <a href="quizzes/">Quizzes</a>
                     <a href="#">Index</a>
                     <a href="#">About the Team</a>
                 </div>
