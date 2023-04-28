@@ -1,9 +1,9 @@
 <?php
     $title = "Commands";
-    $path = "./";
-    $css = "assets/css/styles.css";
+    $path = "../";
+    $css = $path . "assets/css/styles.css";
 
-    include("assets/php/headnav.php");
+    include($path . "assets/php/headnav.php");
 ?>
 
 <h1 class="title">Beginner Commands</h1>
@@ -27,5 +27,5 @@
         history – show history of previous commands
 
 <?php
-	include("assets/php/footer.php");
+	include($path . "assets/php/footer.php");
 ?>
