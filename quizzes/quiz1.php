@@ -6,6 +6,12 @@
 	    '3' => 'a',
 	    '4' => 'b'
 	);
+	$string_answers = array(
+	    '1' => 'pwd',
+	    '2' => 'mkdir',
+	    '3' => 'ls',
+	    '4' => 'scp'
+	);
 	// Define the questions and answer options
 	$questions = array(
 		"1" => "Which command is used to display the current directory?",
