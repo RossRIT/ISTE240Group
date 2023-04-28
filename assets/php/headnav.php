@@ -31,8 +31,7 @@
             <li class="dropdown">
                 <a class="dropbtn">References</a>
                 <div class="dropdown-content">
-                    <a href="<?php echo $path?>quizzes/">Quizzes</a>
-                    <a href="<?php echo $path?>quizzes/index.php">Index</a>
+                    <a href="<?php echo $path?>quizzes/index.php">Quizzes</a>
                     <a href="#">About the Team</a>
                 </div>
             </li>
