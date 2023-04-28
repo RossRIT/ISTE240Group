@@ -20,7 +20,7 @@
             should focus on.
         </div>
     </div>
-    
+
     <div class="mid">
         <div class="secheader">Topics We'll Cover</div>
         <div class="section-container">
