@@ -1,3 +1,4 @@
+
 <?php
 	$correct_answers = array(
 	    '1' => 'a',
@@ -52,10 +53,10 @@
 ?>
 <?php
     $title = "Quiz 1";
-    $path = "./";
-    $css = "../assets/css/styles.css";
+    $path = "../";
+    $css = $path."assets/css/styles.css";
 
-    include("../assets/php/headnav.php");
+    include($path."assets/php/headnav.php");
 ?>
 	<h1>Command-Line Quiz</h1>
 	<p>Test your knowledge on basic commands, file operations, directory management, remote access, and file transfers.
