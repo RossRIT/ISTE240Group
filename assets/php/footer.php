@@ -19,7 +19,7 @@
             Discord: ++++ <br> <br>
         <strong>Other Connections:</strong> <br>
             <a href="other/reference.html">Resources</a> <br>
-            <a href="quizzes/index.php">Quizzes</a>
+            <a href= "<?php echo $path; ?>quizzes/index.php">Quizzes</a>
         </div>
     </footer>
     </body>
