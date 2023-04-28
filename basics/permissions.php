@@ -1,9 +1,9 @@
 <?php
     $title = "Permissions";
-    $path = "./";
-    $css = "assets/css/styles.css";
+    $path = "../";
+    $css = $path . "assets/css/styles.css";
 
-    include("assets/php/headnav.php");
+    include($path . "assets/php/headnav.php");
 ?>
 
 <h1 class="title">Permissions</h1>
@@ -22,5 +22,5 @@
     others - everyone else, all other users
 
 <?php
-	include("assets/php/footer.php");
+	include($path . "assets/php/footer.php");
 ?>
