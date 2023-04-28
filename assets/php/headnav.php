@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="<?php echo $path?>assets/ima/icon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title ?></title>
     <link rel="stylesheet" href=<?php echo $css?>>
@@ -30,8 +31,8 @@
             <li class="dropdown">
                 <a class="dropbtn">References</a>
                 <div class="dropdown-content">
-                    <a href="quizzes/quiz1.php">Quizzes</a>
-                    <a href="quizzes/index.php">Index</a>
+                    <a href="quizzes/">Quizzes</a>
+                    <a href="#">Index</a>
                     <a href="#">About the Team</a>
                 </div>
             </li>

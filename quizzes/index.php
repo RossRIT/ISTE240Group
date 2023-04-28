@@ -16,7 +16,7 @@
             <!-- TODO add background images + links -->
             <div class="section">Getting Started</div>
             <div class="section"><a href="quiz1.php">Basic Commands</a></div>
-            <div class="section"><a href ="basics/dirnfile.php">Directory and File Management</div>
+            <div class="section"><a href="basics/dirnfile.php">Directory and File Management</div>
             <div class="section">Permissions</div>
             <div class="section">Piping and Filters</div>
             <div class="section">Text Editors</div>
