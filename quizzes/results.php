@@ -4,6 +4,8 @@
 ?></div>
 
 <?php
+    $path = "../";
+    include($path.'assets/php/headnav.php');
     // Count the number of correct answers
     $num_correct = $_GET['score'];
 
@@ -20,5 +22,5 @@
     foreach ($correct_answers as $key => $value) {
         echo "<p>Question $key: $value</p>";
     }
-    include('../assets/php/footer.php')
+    include($path.'assets/php/footer.php');
 ?>
