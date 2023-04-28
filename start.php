@@ -14,7 +14,7 @@
     <a href="#" class="sidebar_link">Link 3</a>
     </div>
 
-    <div style="margin-left:25%">
+    <div>
         <h1 class="title">Getting Started</h1>
 
         <h2>What exactly is UNIX?</h2>
