@@ -23,20 +23,15 @@
             <li class="dropdown">
                 <a class="dropbtn">Texts</a>
                 <div class="dropdown-content">
-<<<<<<< HEAD
-                    <a href="texts\pipenfilter.php">Piping and Filters</a>
-                    <a href="#">Text Editors</a>
-=======
                     <a href="texts/pipenfilters.php">Piping and Filters</a>
                     <a href="texts/editors.php">Text Editors</a>
->>>>>>> 48351b495d7995ea5e171b2b16395e04a1cadb49
                 </div>
             </li>
             <li class="dropdown">
                 <a class="dropbtn">References</a>
                 <div class="dropdown-content">
-                    <a href="quizzes/">Quizzes</a>
-                    <a href="#">Index</a>
+                    <a href="quizzes/quiz1.php">Quizzes</a>
+                    <a href="quizzes/index.php">Index</a>
                     <a href="#">About the Team</a>
                 </div>
             </li>
