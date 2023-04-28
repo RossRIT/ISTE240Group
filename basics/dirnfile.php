@@ -8,6 +8,13 @@
 
 <h1 class="title">Directory and File Management</h1>
 
+    In junction to the beginner commands, here are some more in relation to directory management:
+        cd – change directory
+        pwd – confirm current directory
+        ln – make links and symlinks to files and directories
+        mkdir – make new directory
+        rmdir – remove directories in Unix
+
     For remote access , the SSH, or Secure Shell, tool allows you to securely log in and run commands onto remote systems.
         ssh [hostname]
     On the same note here are a few more file transfer commands in Unix:
