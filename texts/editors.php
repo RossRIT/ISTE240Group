@@ -1,9 +1,9 @@
 <?php
     $title = "Editors";
-    $path = "./";
-    $css = "assets/css/styles.css";
+    $path = "../";
+    $css = $path . "assets/css/styles.css";
 
-    include("assets/php/headnav.php");
+    include($path . "assets/php/headnav.php");
 ?>
 
 <h1 class="title">Text Editors</h1>
@@ -25,5 +25,5 @@
             some examples include AbiWord and LibreOffice Writer
 
 <?php
-	include("assets/php/footer.php");
+	include($path . "assets/php/footer.php");
 ?>
