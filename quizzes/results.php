@@ -1,7 +1,9 @@
-<?php
+<div hidden><?php
     // Include the quiz.php file to access the $correct_answers array
-    include('quiz1.php'); //TODO Do not display footer above key
+    include('quiz1.php');
+?></div>
 
+<?php
     // Count the number of correct answers
     $num_correct = $_GET['score'];
 
@@ -18,4 +20,5 @@
     foreach ($correct_answers as $key => $value) {
         echo "<p>Question $key: $value</p>";
     }
+    include('../assets/php/footer.php')
 ?>

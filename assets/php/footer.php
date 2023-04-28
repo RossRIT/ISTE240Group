@@ -2,7 +2,7 @@
         <div id="mailinglist">
             <strong>Mailing List Subscription </strong>
             <p><label>Your Name<br>
-                <input type="text" name="user" autofocus> 
+                <input type="text" name="user" autofocus>
                 </label>
             </p>
             <p>
@@ -19,7 +19,7 @@
             Discord: ++++ <br> <br>
         <strong>Other Connections:</strong> <br>
             <a href="other/reference.html">Resources</a> <br>
-            <a href="other/reference.html">Quizzes</a>
+            <a href="quizzes/index.php">Quizzes</a>
         </div>
     </footer>
     </body>

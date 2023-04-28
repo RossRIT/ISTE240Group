@@ -9,7 +9,7 @@
     <div class="top">
         <h1 class="title">Quizzes</h1>
     </div>
-    
+
     <div class="mid">
         <div class="secheader">Topics</div>
         <div class="section-container">
