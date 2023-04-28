@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="<?php echo $path?>assets/ima/icon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title ?></title>
     <link rel="stylesheet" href=<?php echo $css?>>
@@ -23,8 +24,8 @@
             <li class="dropdown">
                 <a class="dropbtn">Texts</a>
                 <div class="dropdown-content">
-                    <a href="./texts/pipenfilter.php">Piping and Filters</a>
-                    <a href="./texts/editors.php">Text Editors</a>
+                    <a href="<?php echo $path; ?>texts/pipenfilter.php">Pipes and Filters</a>
+                    <a href="texts/editors.php">Text Editors</a>
                 </div>
             </li>
             <li class="dropdown">
