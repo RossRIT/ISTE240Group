@@ -1,6 +1,6 @@
 <?php
     $title = "Quizzes";
-    $path = "../";
+    $path = "../quizzes/index.php";
     $css = "../assets/css/styles.css";
 
     include("../assets/php/headnav.php");

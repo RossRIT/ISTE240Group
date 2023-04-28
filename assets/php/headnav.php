@@ -23,7 +23,7 @@
             <li class="dropdown">
                 <a class="dropbtn">Texts</a>
                 <div class="dropdown-content">
-                    <a href="#">Piping and Filters</a>
+                    <a href="pipenfilter.php">Piping and Filters</a>
                     <a href="#">Text Editors</a>
                 </div>
             </li>

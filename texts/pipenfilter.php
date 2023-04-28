@@ -1,6 +1,6 @@
 <?php
     $title = "PipenFilter";
-    $path = "./";
+    $path = "texts/pipenfilter.php";
     $css = "assets/css/styles.css";
 
     include("assets/php/headnav.php");
