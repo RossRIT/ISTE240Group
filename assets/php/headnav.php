@@ -24,7 +24,7 @@
                 <a class="dropbtn">Texts</a>
                 <div class="dropdown-content">
 <<<<<<< HEAD
-                    <a href="pipenfilter.php">Piping and Filters</a>
+                    <a href="texts\pipenfilter.php">Piping and Filters</a>
                     <a href="#">Text Editors</a>
 =======
                     <a href="texts/pipenfilters.php">Piping and Filters</a>
