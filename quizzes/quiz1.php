@@ -1,10 +1,15 @@
-
 <?php
 	$correct_answers = array(
 	    '1' => 'a',
 	    '2' => 'd',
 	    '3' => 'a',
 	    '4' => 'b'
+	);
+	$string_answers = array(
+	    '1' => 'pwd',
+	    '2' => 'mkdir',
+	    '3' => 'ls',
+	    '4' => 'scp'
 	);
 	// Define the questions and answer options
 	$questions = array(
