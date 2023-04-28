@@ -17,6 +17,12 @@
     echo "<p>You answered $num_correct out of " . count($correct_answers) . " questions correctly.</p>";
     echo "<p>Your score is $percent_correct%.</p>";
 
+    echo "<h3>Questions:</h3>";
+    $i = 1;
+    foreach ($questions as $value => $key){
+        echo "<p>Question $i: $key </p>";
+        $i++;
+    }
     // Output the correct answers
     echo "<h3>Correct Answers:</h3>";
     foreach ($correct_answers as $key => $value) {
