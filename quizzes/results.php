@@ -5,7 +5,7 @@
 
 <?php
     $path = "../";
-    include($path.'assets/php/headnav.php');
+    include($path."assets/php/headnav.php");
     // Count the number of correct answers
     $num_correct = $_GET['score'];
 

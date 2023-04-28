@@ -1,4 +1,3 @@
-
 <?php
 	$correct_answers = array(
 	    '1' => 'a',
