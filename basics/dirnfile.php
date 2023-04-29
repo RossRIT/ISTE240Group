@@ -1,9 +1,9 @@
 <?php
     $title = "DirnFile";
-    $path = "./";
-    $css = "assets/css/styles.css";
+    $path = "../";
+    $css = $path . "assets/css/styles.css";
 
-    include("assets/php/headnav.php");
+    include($path . "assets/php/headnav.php");
 ?>
 
 <h1 class="title">Directory and File Management</h1>
@@ -28,5 +28,5 @@
             to the system.
 
 <?php
-	include("assets/php/footer.php");
+	include($path . "assets/php/footer.php");
 ?>

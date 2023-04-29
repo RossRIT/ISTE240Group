@@ -1,9 +1,9 @@
 <?php
     $title = "PipenFilter";
-    $path = "texts/pipenfilter.php";
-    $css = "assets/css/styles.css";
+    $path = "../";
+    $css = $path . "assets/css/styles.css";
 
-    include("assets/php/headnav.php");
+    include($path . "assets/php/headnav.php");
 ?>
 
 <h1 class="title">Piping and Filters</h1>
@@ -37,5 +37,5 @@
         -c number of bytes
 
 <?php
-	include("assets/php/footer.php");
+	include($path . "assets/php/footer.php");
 ?>
