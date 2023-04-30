@@ -5,6 +5,10 @@ html {
 body { 
     margin: auto;
     width: 90%;
+    font-family: circularStd;
+    font-weight: normal;
+    font-size: 16px;
+    color: #031927;
 }
 
 /*fonts*/
@@ -221,6 +225,24 @@ hr {
 
 .sidebar a:visited {
     color: #417B5A;
+}
+
+/*quizzes*/
+
+.quiz-form #submit-btn {
+    padding: 10px;
+    margin: 5px;
+    background-color: #9D6381;
+    color: #F8F4E3;
+    font-family: circularStd;
+    font-weight: normal;
+    font-size: 16px;
+    border: 0 solid #612940;
+    border-radius: 25px;
+}
+
+.quiz-form #submit-btn:hover {
+    background-color: #612940;
 }
 
 /*footer*/
