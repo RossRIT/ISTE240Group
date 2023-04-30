@@ -2,7 +2,7 @@
         <div id="mailinglist">
             <strong>Mailing List Subscription </strong>
             <p><label>Your Name<br>
-                <input type="text" name="user" autofocus>
+                <input type="text" name="user">
                 </label>
             </p>
             <p>
