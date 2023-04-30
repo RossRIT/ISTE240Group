@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UX Tutorial Home Page</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-    <?php
-	    include("assets/php/nav.php");
-    ?>
+<?php
+    $title = "Home";
+    $path = "./";
+    $css = "assets/css/styles.css";
+
+    include("assets/php/headnav.php");
+?>
 
     <div class="top">
         <h1 class="title">JALAR UX Tutorial Webpage</h1>
@@ -26,7 +20,7 @@
             should focus on.
         </div>
     </div>
-    
+
     <div class="mid">
         <div class="secheader">Topics We'll Cover</div>
         <div class="section-container">
@@ -47,5 +41,3 @@
     <?php
 	    include("assets/php/footer.php");
     ?>
-</body>
-</html>
