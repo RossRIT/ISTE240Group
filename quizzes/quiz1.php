@@ -67,7 +67,7 @@
 	<h1>Command-Line Quiz</h1>
 	<p>Test your knowledge on basic commands, file operations, directory management, remote access, and file transfers.
 	</p>
-	<form method="POST" action="results.php">
+	<form method="POST" action="results.php" class="quiz-form">
 	    <!-- Question 1 -->
 	    <h3>1. Which command is used to display the current directory?</h3>
 	    <label>
