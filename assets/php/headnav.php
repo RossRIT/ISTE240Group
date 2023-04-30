@@ -24,7 +24,7 @@
             <li class="dropdown">
                 <a class="dropbtn">Texts</a>
                 <div class="dropdown-content">
-                    <a href="<?php echo $path; ?>texts/pipenfilter.php">Pipes and Filters</a>
+                    <a href="<?php echo $path; ?>texts/pipenfilter.php">Piping and Filters</a>
                     <a href="<?php echo $path; ?>texts/editors.php">Text Editors</a>
                 </div>
             </li>
