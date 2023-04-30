@@ -20,7 +20,7 @@
                 <strong>execute permission(x)</strong> - can run a file as a program / can traverse a directory
             </p>
             <p>
-                <img src="https://www.freecodecamp.org/news/content/images/2022/04/image-146.png" alt="permissions">
+                <img src="https://www.freecodecamp.org/news/content/images/2022/04/image-146.png" alt="permissions"> </br>
                 understanding ex: drwxr-xr-x 7 user staff 224 Jun 21 15:26 </br>
                     first group - file owner’s permissions </br>
                     second group - group permissions </br>
