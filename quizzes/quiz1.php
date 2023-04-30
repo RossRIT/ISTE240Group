@@ -1,5 +1,6 @@
 <!--Getting Started Quiz-->
 <?php
+		$quiz_number = 1;
 	$correct_answers = array(
 	    '1' => 'b',
 	    '2' => 'd',
@@ -53,7 +54,7 @@
 	            $num_correct++;
 	        }
 	    }
-	    header('Location: results.php?score=' . $num_correct);
+	    header("Location: results.php?score=$num_correct&quiz=$quiz_number");
 	    exit();
 	}
     $title = "Quiz 1";
@@ -68,79 +69,30 @@
 	<form method="POST" action="results.php" class="quiz-form">
 	    <!-- Question 1 -->
 	    <h3><?php echo $questions[1];?></h3>
-	    <ol type="a"><label>
-	        <input type="radio" name="1" value="a">
-	        <li><?php echo $answers[1]['a'];?></li>
-	    </label><br>
-	    <label>
-	        <input type="radio" name="1" value="b">
-	        <li><?php echo $answers[1]['b'];?></li>
-	    </label><br>
-	    <label>
-	        <input type="radio" name="1" value="c">
-	        <li><?php echo $answers[1]['c'];?></li>
-	    </label><br>
-	    <label>
-	        <input type="radio" name="1" value="d">
-	        <li><?php echo $answers[1]['d'];?></li></ol>
-	    </label><br><br>
+	        <input type="radio" name="1" value="a" id="1a"><label for="1a">(a.) <?php echo $answers[1]['a'];?></label><br>
+			<input type="radio" name="1" value="b" id="1b"><label for="1b">(b.) <?php echo $answers[1]['b'];?></label><br>
+			<input type="radio" name="1" value="c" id="1c"><label for="1c">(c.) <?php echo $answers[1]['c'];?></label><br>
+			<input type="radio" name="1" value="d" id="1d"><label for="1d">(d.) <?php echo $answers[1]['d'];?></label><br><br>
 
 	    <!-- Question 2 -->
-	    <h3><?php echo $questions[2];?></h3>
-	    <label>
-	        <input type="radio" name="2" value="a">
-	        a. <?php echo $answers[2]['a'];?>
-	    </label><br>
-	    <label>
-	        <input type="radio" name="2" value="b">
-	        b. <?php echo $answers[2]['b'];?>
-	    </label><br>
-	    <label>
-	        <input type="radio" name="2" value="c">
-	        c. <?php echo $answers[2]['c'];?>
-	    </label><br>
-	    <label>
-	        <input type="radio" name="2" value="d">
-	        d. <?php echo $answers[2]['d'];?>
-	    </label><br><br>
+		<h3><?php echo $questions[2];?></h3>
+	        <input type="radio" name="2" value="a" id="2a"><label for="2a">(a.) <?php echo $answers[2]['a'];?></label><br>
+			<input type="radio" name="2" value="b" id="2b"><label for="2b">(b.) <?php echo $answers[2]['b'];?></label><br>
+			<input type="radio" name="2" value="c" id="2c"><label for="2c">(c.) <?php echo $answers[2]['c'];?></label><br>
+			<input type="radio" name="2" value="d" id="2d"><label for="2d">(d.) <?php echo $answers[2]['d'];?></label><br><br>
 
 	    <!-- Question 3 -->
-	    <h3><?php echo $questions[3];?></h3>
-	    <label>
-	        <input type="radio" name="3" value="a">
-	        a.<?php echo $answers[3]['a'];?>
-	    </label><br>
-	    <label>
-	        <input type="radio" name="3" value="b">
-	        b. <?php echo $answers[1]['b'];?>
-	    </label><br>
-	    <label>
-	        <input type="radio" name="3" value="c">
-	        c. <?php echo $answers[3]['c'];?>
-	    </label><br>
-	    <label>
-	        <input type="radio" name="3" value="d">
-	        d. <?php echo $answers[3]['d'];?>
-	    </label><br><br>
-
+		<h3><?php echo $questions[3];?></h3>
+	        <input type="radio" name="3" value="a" id="3a"><label for="3a">(a.) <?php echo $answers[3]['a'];?></label><br>
+			<input type="radio" name="3" value="b" id="3b"><label for="3b">(b.) <?php echo $answers[3]['b'];?></label><br>
+			<input type="radio" name="3" value="c" id="3c"><label for="3c">(c.) <?php echo $answers[3]['c'];?></label><br>
+			<input type="radio" name="3" value="d" id="3d"><label for="3d">(d.) <?php echo $answers[3]['d'];?></label><br><br>
 	    <!-- Question 4 -->
-	    <h3><?php echo $questions[4];?></h3>
-	    <label>
-	        <input type="radio" name="4" value="a">
-	        a. <?php echo $answers[4]['a'];?>
-	    </label><br>
-	    <label>
-	        <input type="radio" name="4" value="b">
-	        b. <?php echo $answers[4]['b'];?>
-	    </label><br>
-	    <label>
-	        <input type="radio" name="4" value="c">
-	        c. <?php echo $answers[4]['c'];?>
-	    </label><br>
-	    <label>
-	        <input type="radio" name="4" value="d">
-	        d. <?php echo $answers[4]['d'];?>
-	    </label><br><br>
+		<h3><?php echo $questions[4];?></h3>
+	        <input type="radio" name="4" value="a" id="4a"><label for="4a">(a.) <?php echo $answers[4]['a'];?></label><br>
+			<input type="radio" name="4" value="b" id="4b"><label for="4b">(b.) <?php echo $answers[4]['b'];?></label><br>
+			<input type="radio" name="4" value="c" id="4c"><label for="4c">(c.) <?php echo $answers[4]['c'];?></label><br>
+			<input type="radio" name="4" value="d" id="4d"><label for="4d">(d.) <?php echo $answers[4]['d'];?></label><br><br>
 
 	    <button type="submit" id="submit-btn">Submit</button>
 	</form>
