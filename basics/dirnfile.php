@@ -15,7 +15,7 @@
     <div style="margin-left:25%">
         <h1 class="title">Directory and File Management</h1>
             <img src="https://www.ibm.com/support/knowledgecenter/SSQ2R2_14.1.0/com.ibm.guide.hostconfig.reference.doc/images/drawing_-_directory_structure.jpg"
-                alt="directories">
+                alt="directories"> </br>
             In junction to the beginner commands, here are some more in relation to directory management: </br>
                 <ul>
                     <li>cd – change directory</li>
