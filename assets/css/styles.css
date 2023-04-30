@@ -238,4 +238,14 @@ footer {
     background-color: #612940;
 }
 
-
+.card.swipe-left,
+.card.swipe-right {
+    transition: transform 0.3s ease-out;
+    opacity: 0;
+}
+.card.swipe-left {
+    transform: translateX(-100%);
+}
+.card.swipe-right {
+    transform: translateX(100%);
+}

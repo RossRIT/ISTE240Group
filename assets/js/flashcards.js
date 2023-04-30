@@ -37,3 +37,26 @@ document.getElementById("next-card").addEventListener("click", () => {
     currentCardIndex = (currentCardIndex + 1) % flashcards.length;
     displayFlashcard(currentCardIndex);
 });
+
+const prevBtn = document.getElementById("prev-btn");
+const nextBtn = document.getElementById("next-btn");
+const flashcardsContainer = document.getElementById("flashcards-container");
+
+prevBtn.addEventListener("click", () => {
+    changeCard("left");
+});
+
+nextBtn.addEventListener("click", () => {
+    changeCard("right");
+});
+
+function changeCard(direction) {
+    const currentCard = flashcardsContainer.querySelector(".card");
+    currentCard.classList.add(direction === "left" ? "swipe-left" : "swipe-right");
+    setTimeout(() => {
+       
+        currentCard.style.display = "none"; 
+        currentCard.classList.remove(direction === "left" ? "swipe-left" : "swipe-right");
+        currentCard.style.display = "block";
+    }, 300); 
+}
