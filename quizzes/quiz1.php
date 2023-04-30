@@ -65,7 +65,7 @@
 	<h1>Getting Started Quiz</h1>
 	<p>Test your knowledge on UNIX concepts.
 	</p>
-	<form method="POST" action="results.php">
+	<form method="POST" action="results.php" class="quiz-form">
 	    <!-- Question 1 -->
 	    <h3><?php echo $questions[1];?></h3>
 	    <ol type="a"><label>
