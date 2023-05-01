@@ -1,11 +1,20 @@
-// Add your flashcard data here
-// Replace this with your fetch_flashcards.php data once it is integrated
-const flashcards = [
-    { question: "Question test", answer: "Answer 1" },
+
+const flashcardsSet1 = [
+    { question: "Question 1", answer: "Answer 1" },
     { question: "Question 2", answer: "Answer 2" },
-    { question: "Question 3", answer: "Answer 3" },
 ];
 
+const flashcardsSet2 = [
+    { question: "Question A", answer: "Answer A" },
+    { question: "Question B", answer: "Answer B" },
+];
+
+const flashcardsSet3 = [
+    { question: "Question X", answer: "Answer X" },
+    { question: "Question Y", answer: "Answer Y" },
+];
+
+let flashcards = flashcardsSet1;
 let currentCardIndex = 0;
 
 // Function to display a flashcard
@@ -19,7 +28,6 @@ function displayFlashcard(index) {
       card.classList.add("card-hidden");
     });
   
-    // Check if the card already exists, if not, create and append it
     let newCard = cards[index];
     if (!newCard) {
       newCard = document.createElement("div");
@@ -40,10 +48,42 @@ function displayFlashcard(index) {
   }
   displayFlashcard(currentCardIndex);
 
+  const flashcardSetSelect = document.getElementById("flashcard-set");
+
+  flashcardSetSelect.addEventListener("change", function () {
+
+      const selectedSet = flashcardSetSelect.value;
+  
+      loadFlashcards(selectedSet);
+  });
+  
+  function loadFlashcards(setName) {
+    const container = document.querySelector("#flashcards-container .container");
+    container.innerHTML = "";
+    
+    switch (setName) {
+      case "set1":
+        flashcards = flashcardsSet1;
+        break;
+      case "set2":
+        flashcards = flashcardsSet2;
+        break;
+      case "set3":
+        flashcards = flashcardsSet3;
+        break;
+      default:
+        flashcards = [];
+    }
+    currentCardIndex = 0;
+    displayFlashcard(currentCardIndex);
+  }
+  
 
 
 // Display the first flashcard initially
 window.addEventListener("DOMContentLoaded", () => {
+    loadFlashcards("set1");
+
     displayFlashcard(currentCardIndex);
   });
   

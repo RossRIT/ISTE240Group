@@ -5,6 +5,12 @@
 
     include("../assets/php/headnav.php");
 ?>
+<select id="flashcard-set">
+    <option value="set1">Set 1</option>
+    <option value="set2">Set 2</option>
+    <option value="set3">Set 3</option>
+</select>
+
 <div id="flashcards-wrapper">
     <button id="prev-card" class="arrow-btn">&larr;</button>
 
