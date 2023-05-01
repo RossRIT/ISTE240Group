@@ -1,6 +1,6 @@
 <!--Getting Started Quiz-->
 <?php
-		$quiz_number = 1;
+	$quiz = 1;
 	$correct_answers = array(
 	    '1' => 'b',
 	    '2' => 'd',
@@ -66,7 +66,9 @@
 	<h1>Getting Started Quiz</h1>
 	<p>Test your knowledge on UNIX concepts.
 	</p>
-	<form method="POST" action="results.php" class="quiz-form">
+	<form method="POST" class="quiz-form">
+	<input type="hidden" name="quiz" value="<?php echo $quiz; ?>">
+
 	    <!-- Question 1 -->
 	    <h3><?php echo $questions[1];?></h3>
 	        <input type="radio" name="1" value="a" id="1a"><label for="1a">(a.) <?php echo $answers[1]['a'];?></label><br>

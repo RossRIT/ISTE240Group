@@ -55,7 +55,7 @@
 	        }
 	    }
 	    header("Location: results.php?score=$num_correct&quiz=$quiz");
-	    
+	    exit();
 	}
 ?>
 <?php
