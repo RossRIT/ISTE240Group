@@ -1,52 +1,52 @@
-<!--Getting Started Quiz-->
 <?php
-	$quiz = 1;
+	$quiz = 5;
 	$correct_answers = array(
-	    '1' => 'b',
-	    '2' => 'd',
-	    '3' => 'c',
-	    '4' => 'a'
+	    '1' => 'c',
+	    '2' => 'b',
+	    '3' => 'a',
+	    '4' => 'd'
 	);
 	$string_answers = array(
-	    '1' => 'An operating system',
-	    '2' => 'Type "logout"',
-	    '3' => 'In directories',
-	    '4' => 'AT&T'
+	    '1' => 'c',
+	    '2' => 'v',
+	    '3' => 'head',
+	    '4' => 'tail'
 	);
 	// Define the questions and answer options
 	$questions = array(
-		"1" => "What is UNIX?",
-		"2" => "How can you log out of a UNIX system?",
-		"3" => "How are files organized in UNIX?",
-		"4" => "Who developed UNIX?"
+		"1" => "Which grep option displays a count of matching lines?",
+		"2" => "Which grep option displays all lines not matching the searched string?",
+		"3" => "What command shows the top lines of files?",
+		"4" => "What command shows the bottom lines of files??"
 	);
 
 	$answers = array(
 		"1" => array(
-			"a" => "A programming language",
-			"b" => "An operating system",
-			"c" => "A file management system",
-			"d" => "A network protocol"
+			"a" => "v",
+			"b" => "m",
+			"c" => "c",
+			"d" => "l"
 		),
 		"2" => array(
-			"a" => 'Type "exit"',
-			"b" => 'Type "shutdown"',
-			"c" => 'Type "logoff"',
-			"d" => 'Type "logout"'
+			"a" => "m",
+			"b" => "v",
+			"c" => "l",
+			"d" => "c"
 		),
 		"3" => array(
-			"a" => "In lists",
-			"b" => "In tables",
-			"c" => "In directories",
-			"d" => "In blocks"
+			"a" => "head",
+			"b" => "header",
+			"c" => "top",
+			"d" => "start"
 		),
 		"4" => array(
-			"a" => "AT&T",
-			"b" => "Apple",
-			"c" => "IBM",
-			"d" => "Microsoft"
+			"a" => "bottom",
+			"b" => "last",
+			"c" => "foot",
+			"d" => "tail"
 		)
 	);
+	//When submit is pushed, calculate score
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	    $num_correct = 0;
 	    foreach ($_POST as $key => $value) {
@@ -57,18 +57,18 @@
 	    header("Location: results.php?score=$num_correct&quiz=$quiz");
 	    exit();
 	}
-    $title = "Quiz 1";
+?>
+<?php
+    $title = "Quiz 2";
     $path = "../";
     $css = $path."assets/css/styles.css";
-
+	$learn = $path."texts/pipenfilter.php";
     include($path."assets/php/headnav.php");
 ?>
-	<h1>Getting Started Quiz</h1>
-	<p>Test your knowledge on UNIX concepts.
-	</p>
+	<h1>Piping and Filters Quiz</h1>
+	<p>Test your knowledge on UNIX concepts.</p>
 	<form method="POST" class="quiz-form">
-	<input type="hidden" name="quiz" value="<?php echo $quiz; ?>">
-
+		<input type="hidden" name="quiz" value="<?php echo $quiz; ?>">
 	    <!-- Question 1 -->
 	    <h3><?php echo $questions[1];?></h3>
 	        <input type="radio" name="1" value="a" id="1a"><label for="1a">(a.) <?php echo $answers[1]['a'];?></label><br>

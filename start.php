@@ -5,9 +5,7 @@
 
     include("assets/php/headnav.php");
 ?>
-
 <div class="content-container">
-
     <div class="sidebar">
     <a href="#" class="sidebar_link">Link 1</a>
     <a href="#" class="sidebar_link">Link 2</a>
@@ -47,9 +45,7 @@
                 Using the command “ls” you can list all the files or directories available in a directory structure.
             </p>
     </div>
-
 </div>
-
 <?php
 	include("assets/php/footer.php");
 ?>
