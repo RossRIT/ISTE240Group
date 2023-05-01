@@ -3,19 +3,23 @@
     $num_correct = $_GET['score'];
     $quiz = $_GET['quiz'];
     $quiz_file = 'quiz' . $quiz . '.php';
+    $toggle = "";
+    $default = "hidden";
     if (file_exists($quiz_file)) {
         include($quiz_file);
     } else {
-        echo 'Invalid quiz: ' . $quiz_file;
+        $toggle = "hidden";
+        $title = "Invalid Page";
     }
-    
+    $path = "../";
+    $percent_correct = round($num_correct / count($correct_answers) * 100);
+
 ?></div>
 
-<?php
-    $path = "../";
+<div <?php echo $toggle; ?>><?php
+    
     include($path."assets/php/headnav.php");
     // Calculate the percentage of correct answers
-    $percent_correct = round($num_correct / count($correct_answers) * 100);
 
     // Output the results to the user
     echo "<h2>Quiz Results:</h2>";
@@ -35,3 +39,6 @@
     }
     include($path.'assets/php/footer.php');
 ?>
+<div <?php echo $default; ?>>
+    <?php include("invalidrequest.php");?>
+</div>
