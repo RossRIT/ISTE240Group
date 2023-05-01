@@ -1,52 +1,52 @@
-<!--Getting Started Quiz-->
 <?php
-	$quiz = 1;
+	$quiz = 4;
 	$correct_answers = array(
-	    '1' => 'b',
-	    '2' => 'd',
-	    '3' => 'c',
-	    '4' => 'a'
+	    '1' => 'c',
+	    '2' => 'a',
+	    '3' => 'a',
+	    '4' => 'd'
 	);
 	$string_answers = array(
-	    '1' => 'An operating system',
-	    '2' => 'Type "logout"',
-	    '3' => 'In directories',
-	    '4' => 'AT&T'
+	    '1' => 'read',
+	    '2' => 'write',
+	    '3' => 'execute',
+	    '4' => 'owner'
 	);
 	// Define the questions and answer options
 	$questions = array(
-		"1" => "What is UNIX?",
-		"2" => "How can you log out of a UNIX system?",
-		"3" => "How are files organized in UNIX?",
-		"4" => "Who developed UNIX?"
+		"1" => "What is an r permission?",
+		"2" => "What is a w permission?",
+		"3" => "What is an x permission?",
+		"4" => "What is the field of the third column of information after executing ls -l?"
 	);
 
 	$answers = array(
 		"1" => array(
-			"a" => "A programming language",
-			"b" => "An operating system",
-			"c" => "A file management system",
-			"d" => "A network protocol"
+			"a" => "write",
+			"b" => "execute",
+			"c" => "read",
+			"d" => "remove"
 		),
 		"2" => array(
-			"a" => 'Type "exit"',
-			"b" => 'Type "shutdown"',
-			"c" => 'Type "logoff"',
-			"d" => 'Type "logout"'
+			"a" => "write",
+			"b" => "win",
+			"c" => "whitelist",
+			"d" => "words"
 		),
 		"3" => array(
-			"a" => "In lists",
-			"b" => "In tables",
-			"c" => "In directories",
-			"d" => "In blocks"
+			"a" => "execute",
+			"b" => "cross-platfrom",
+			"c" => "cross-save",
+			"d" => "excused"
 		),
 		"4" => array(
-			"a" => "AT&T",
-			"b" => "Apple",
-			"c" => "IBM",
-			"d" => "Microsoft"
+			"a" => "size",
+			"b" => "group",
+			"c" => "filename",
+			"d" => "owner"
 		)
 	);
+	//When submit is pushed, calculate score
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	    $num_correct = 0;
 	    foreach ($_POST as $key => $value) {
@@ -57,18 +57,19 @@
 	    header("Location: results.php?score=$num_correct&quiz=$quiz");
 	    exit();
 	}
-    $title = "Quiz 1";
+?>
+<?php
+    $title = "Quiz 2";
     $path = "../";
     $css = $path."assets/css/styles.css";
+	$learn = $path."basics/permissions.php";
 
     include($path."assets/php/headnav.php");
 ?>
-	<h1>Getting Started Quiz</h1>
-	<p>Test your knowledge on UNIX concepts.
-	</p>
+	<h1>Permissions Quiz</h1>
+	<p>Test your knowledge on UNIX concepts.</p>
 	<form method="POST" class="quiz-form">
-	<input type="hidden" name="quiz" value="<?php echo $quiz; ?>">
-
+		<input type="hidden" name="quiz" value="<?php echo $quiz; ?>">
 	    <!-- Question 1 -->
 	    <h3><?php echo $questions[1];?></h3>
 	        <input type="radio" name="1" value="a" id="1a"><label for="1a">(a.) <?php echo $answers[1]['a'];?></label><br>
