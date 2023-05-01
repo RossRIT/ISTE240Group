@@ -1,49 +1,49 @@
 <?php
-	$quiz = 2;
+	$quiz = 3;
 	$correct_answers = array(
-	    '1' => 'a',
-	    '2' => 'd',
+	    '1' => 'b',
+	    '2' => 'b',
 	    '3' => 'a',
-	    '4' => 'b'
+	    '4' => 'd'
 	);
 	$string_answers = array(
-	    '1' => 'clear',
-	    '2' => 'history',
-	    '3' => 'ls',
-	    '4' => 'mv'
+	    '1' => 'ls',
+	    '2' => 'mkdir',
+	    '3' => 'ln',
+	    '4' => 'scp'
 	);
 	// Define the questions and answer options
 	$questions = array(
-		"1" => "Which command is used to clear the shell?",
-		"2" => "What is the command to show previous commands?",
-		"3" => "What is the command to list the contents of a directory?",
-		"4" => "What is the command used to move files and directories?"
+		"1" => "Which command is used to display the current directory?",
+		"2" => "What is the command to create a new directory?",
+		"3" => "What is the command to make links to files/directories?",
+		"4" => "What is the command to transfer files between a local machine and a remote server over SSH?"
 	);
 
 	$answers = array(
 		"1" => array(
-			"a" => "clear",
-			"b" => "clean",
-			"c" => "rem",
-			"d" => "fresh"
+			"a" => "cd",
+			"b" => "pwd",
+			"c" => "ls",
+			"d" => "mkdir"
 		),
 		"2" => array(
-			"a" => "old",
-			"b" => "prev",
-			"c" => "past",
-			"d" => "history"
-		),
-		"3" => array(
 			"a" => "ls",
 			"b" => "cd",
 			"c" => "mkdir",
 			"d" => "pwd"
 		),
+		"3" => array(
+			"a" => "ln",
+			"b" => "cd",
+			"c" => "mkdir",
+			"d" => "pwd"
+		),
 		"4" => array(
-			"a" => "cp",
-			"b" => "mv",
-			"c" => "rm",
-			"d" => "cd"
+			"a" => "ftp",
+			"b" => "wget",
+			"c" => "sftp",
+			"d" => "scp"
 		)
 	);
 	//When submit is pushed, calculate score
@@ -62,10 +62,10 @@
     $title = "Quiz 2";
     $path = "../";
     $css = $path."assets/css/styles.css";
-	$learn = $path."basics/commands.php";
+	$learn = $path."basics/dirnfile.php";
     include($path."assets/php/headnav.php");
 ?>
-	<h1>Beginner Command Quiz</h1>
+	<h1>Directory And File Management Quiz</h1>
 	<p>Test your knowledge on UNIX concepts.</p>
 	<form method="POST" class="quiz-form">
 		<input type="hidden" name="quiz" value="<?php echo $quiz; ?>">

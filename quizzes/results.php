@@ -7,6 +7,7 @@
     $default = "hidden";
     if (file_exists($quiz_file)) {
         include($quiz_file);
+        $title = "Quiz Results";
     } else {
         $toggle = "hidden";
         $title = "Invalid Page";
