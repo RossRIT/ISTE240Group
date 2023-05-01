@@ -6,9 +6,12 @@
     include("../assets/php/headnav.php");
 ?>
 <select id="flashcard-set">
-    <option value="set1">Set 1</option>
-    <option value="set2">Set 2</option>
-    <option value="set3">Set 3</option>
+    <option value="GettingStarted">Getting Started</option>
+    <option value="Beginner">Beginner Commands</option>
+    <option value="DirectoryFileMngmt">Directory and File Management</option>
+    <option value="Permissions">Permissions</option>
+    <option value="pipingfilter">Piping and Filters</option>
+    <option value="txtedit">Text Editors</option>
 </select>
 
 <div id="flashcards-wrapper">
@@ -20,7 +23,9 @@
     </div>
     <button id="next-card" class="arrow-btn">&rarr;</button>
 </div>
+
 <script src="../assets/js/flashcards.js"></script>
+
 <?php
     include("../assets/php/footer.php");
 ?>
