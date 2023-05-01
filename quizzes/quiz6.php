@@ -2,48 +2,48 @@
 	$quiz = 2;
 	$correct_answers = array(
 	    '1' => 'a',
-	    '2' => 'd',
+	    '2' => 'a',
 	    '3' => 'a',
-	    '4' => 'b'
+	    '4' => 'a'
 	);
 	$string_answers = array(
-	    '1' => 'clear',
-	    '2' => 'history',
-	    '3' => 'ls',
-	    '4' => 'mv'
+	    '1' => 'Graphical User Interface',
+	    '2' => 'vim',
+	    '3' => 'VSCode',
+	    '4' => 'AbiWord'
 	);
 	// Define the questions and answer options
 	$questions = array(
-		"1" => "Which command is used to clear the shell?",
-		"2" => "What is the command to show previous commands?",
-		"3" => "What is the command to list the contents of a directory?",
-		"4" => "What is the command used to move files and directories?"
+		"1" => "What does GUI stand for?",
+		"2" => "How do you open VIM?",
+		"3" => "Which editor has a GUI?",
+		"4" => "Which is a WYSIWYG editor?"
 	);
 
 	$answers = array(
 		"1" => array(
-			"a" => "clear",
-			"b" => "clean",
-			"c" => "rem",
-			"d" => "fresh"
+			"a" => "Graphical User Interface",
+			"b" => "Generated Usable Interface",
+			"c" => "Generally Understandable Interface",
+			"d" => "Generated Using Internet"
 		),
 		"2" => array(
-			"a" => "old",
-			"b" => "prev",
-			"c" => "past",
-			"d" => "history"
+			"a" => "vim",
+			"b" => "vi",
+			"c" => "vidi",
+			"d" => "v"
 		),
 		"3" => array(
-			"a" => "ls",
-			"b" => "cd",
-			"c" => "mkdir",
-			"d" => "pwd"
+			"a" => "VSCode",
+			"b" => "VIM",
+			"c" => "GNU Nano",
+			"d" => "Notepad"
 		),
 		"4" => array(
-			"a" => "cp",
-			"b" => "mv",
-			"c" => "rm",
-			"d" => "cd"
+			"a" => "AbiWord",
+			"b" => "Word",
+			"c" => "VSCode",
+			"d" => "Sublime"
 		)
 	);
 	//When submit is pushed, calculate score
@@ -62,10 +62,10 @@
     $title = "Quiz 2";
     $path = "../";
     $css = $path."assets/css/styles.css";
-	$learn = $path."basics/commands.php";
+	$learn = $path."texts/editors.php";
     include($path."assets/php/headnav.php");
 ?>
-	<h1>Beginner Command Quiz</h1>
+	<h1>Text Editors Quiz</h1>
 	<p>Test your knowledge on UNIX concepts.</p>
 	<form method="POST" class="quiz-form">
 		<input type="hidden" name="quiz" value="<?php echo $quiz; ?>">
