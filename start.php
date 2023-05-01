@@ -8,7 +8,7 @@
 <div class="content-container">
     <div class="sidebar">
     <a href="#unix" class="sidebar_link">UNIX</a>
-    <a href="#arch" class="sidebar_link">Architecture</a>
+    <a href="#arch" class="sidebar_link">architecture</a>
     <a href="#login" class="sidebar_link">login/logout</a>
     </div>
 
