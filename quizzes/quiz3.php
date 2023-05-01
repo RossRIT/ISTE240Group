@@ -1,52 +1,52 @@
-<!--Getting Started Quiz-->
 <?php
-	$quiz = 1;
+	$quiz = 3;
 	$correct_answers = array(
 	    '1' => 'b',
-	    '2' => 'd',
-	    '3' => 'c',
-	    '4' => 'a'
+	    '2' => 'b',
+	    '3' => 'a',
+	    '4' => 'd'
 	);
 	$string_answers = array(
-	    '1' => 'An operating system',
-	    '2' => 'Type "logout"',
-	    '3' => 'In directories',
-	    '4' => 'AT&T'
+	    '1' => 'ls',
+	    '2' => 'mkdir',
+	    '3' => 'ln',
+	    '4' => 'scp'
 	);
 	// Define the questions and answer options
 	$questions = array(
-		"1" => "What is UNIX?",
-		"2" => "How can you log out of a UNIX system?",
-		"3" => "How are files organized in UNIX?",
-		"4" => "Who developed UNIX?"
+		"1" => "Which command is used to display the current directory?",
+		"2" => "What is the command to create a new directory?",
+		"3" => "What is the command to make links to files/directories?",
+		"4" => "What is the command to transfer files between a local machine and a remote server over SSH?"
 	);
 
 	$answers = array(
 		"1" => array(
-			"a" => "A programming language",
-			"b" => "An operating system",
-			"c" => "A file management system",
-			"d" => "A network protocol"
+			"a" => "cd",
+			"b" => "pwd",
+			"c" => "ls",
+			"d" => "mkdir"
 		),
 		"2" => array(
-			"a" => 'Type "exit"',
-			"b" => 'Type "shutdown"',
-			"c" => 'Type "logoff"',
-			"d" => 'Type "logout"'
+			"a" => "ls",
+			"b" => "cd",
+			"c" => "mkdir",
+			"d" => "pwd"
 		),
 		"3" => array(
-			"a" => "In lists",
-			"b" => "In tables",
-			"c" => "In directories",
-			"d" => "In blocks"
+			"a" => "ln",
+			"b" => "cd",
+			"c" => "mkdir",
+			"d" => "pwd"
 		),
 		"4" => array(
-			"a" => "AT&T",
-			"b" => "Apple",
-			"c" => "IBM",
-			"d" => "Microsoft"
+			"a" => "ftp",
+			"b" => "wget",
+			"c" => "sftp",
+			"d" => "scp"
 		)
 	);
+	//When submit is pushed, calculate score
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	    $num_correct = 0;
 	    foreach ($_POST as $key => $value) {
@@ -57,18 +57,18 @@
 	    header("Location: results.php?score=$num_correct&quiz=$quiz");
 	    exit();
 	}
-    $title = "Quiz 1";
+?>
+<?php
+    $title = "Quiz 2";
     $path = "../";
     $css = $path."assets/css/styles.css";
-
+	$learn = $path."basics/dirnfile.php";
     include($path."assets/php/headnav.php");
 ?>
-	<h1>Getting Started Quiz</h1>
-	<p>Test your knowledge on UNIX concepts.
-	</p>
+	<h1>Directory And File Management Quiz</h1>
+	<p>Test your knowledge on UNIX concepts.</p>
 	<form method="POST" class="quiz-form">
-	<input type="hidden" name="quiz" value="<?php echo $quiz; ?>">
-
+		<input type="hidden" name="quiz" value="<?php echo $quiz; ?>">
 	    <!-- Question 1 -->
 	    <h3><?php echo $questions[1];?></h3>
 	        <input type="radio" name="1" value="a" id="1a"><label for="1a">(a.) <?php echo $answers[1]['a'];?></label><br>
