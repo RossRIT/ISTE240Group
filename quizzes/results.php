@@ -28,5 +28,9 @@
     foreach ($string_answers as $key => $value) {
         echo "<p>Question $key: $value</p>";
     }
+<<<<<<< Updated upstream
+=======
+    echo '<h3>Want to read again?</h3><a id="results-button" href="' . $learn . '">Click Here</a>'; //TODO style here
+>>>>>>> Stashed changes
     include($path.'assets/php/footer.php');
 ?>
