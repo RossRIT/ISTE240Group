@@ -10,14 +10,6 @@
 
     <div id="flashcards-container">
         <div class="container">
-            <div class="card">
-                <div class="front">
-                    <p>Question</p>
-                </div>
-                <div class="back">
-                    <p>Answer</p>
-                </div>
-            </div>
         </div>
     </div>
     <button id="next-card" class="arrow-btn">&rarr;</button>
