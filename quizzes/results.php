@@ -1,14 +1,19 @@
 <div hidden><?php
     // Include the quiz.php file to access the $correct_answers array
-    include('quiz1.php');
+    $num_correct = $_GET['score'];
+    $quiz = $_GET['quiz'];
+    $quiz_file = 'quiz' . $quiz . '.php';
+    if (file_exists($quiz_file)) {
+        include($quiz_file);
+    } else {
+        echo 'Invalid quiz: ' . $quiz_file;
+    }
+    
 ?></div>
 
 <?php
     $path = "../";
     include($path."assets/php/headnav.php");
-    // Count the number of correct answers
-    $num_correct = $_GET['score'];
-
     // Calculate the percentage of correct answers
     $percent_correct = round($num_correct / count($correct_answers) * 100);
 

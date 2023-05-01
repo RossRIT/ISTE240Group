@@ -54,7 +54,7 @@
 	            $num_correct++;
 	        }
 	    }
-	    header("Location: results.php?score=$num_correct&quiz=$quiz_number");
+	    header("Location: results.php?score=$num_correct&quiz=$quiz");
 	    exit();
 	}
     $title = "Quiz 1";
