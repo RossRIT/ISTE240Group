@@ -1,5 +1,5 @@
 <?php
-	$quiz_number = 2;
+	$quiz = 2;
 	$correct_answers = array(
 	    '1' => 'a',
 	    '2' => 'd',
@@ -46,6 +46,7 @@
 			"d" => "wget"
 		)
 	);
+	//When submit is pushed, calculate score
 	if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	    $num_correct = 0;
 	    foreach ($_POST as $key => $value) {
@@ -53,7 +54,7 @@
 	            $num_correct++;
 	        }
 	    }
-	    header("Location: results.php?score=$num_correct&quiz=$quiz_number");
+	    header("Location: results.php?score=$num_correct&quiz=$quiz");
 	    exit();
 	}
 ?>
@@ -65,9 +66,9 @@
     include($path."assets/php/headnav.php");
 ?>
 	<h1>Beginner Command Quiz</h1>
-	<p>Test your knowledge on UNIX concepts.
-	</p>
-	<form method="POST" action="results.php" class="quiz-form">
+	<p>Test your knowledge on UNIX concepts.</p>
+	<form method="POST" class="quiz-form">
+		<input type="hidden" name="quiz" value="<?php echo $quiz; ?>">
 	    <!-- Question 1 -->
 	    <h3><?php echo $questions[1];?></h3>
 	        <input type="radio" name="1" value="a" id="1a"><label for="1a">(a.) <?php echo $answers[1]['a'];?></label><br>

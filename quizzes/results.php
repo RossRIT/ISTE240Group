@@ -1,16 +1,25 @@
 <div hidden><?php
     // Include the quiz.php file to access the $correct_answers array
-    include('quiz1.php');
+    $num_correct = $_GET['score'];
+    $quiz = $_GET['quiz'];
+    $quiz_file = 'quiz' . $quiz . '.php';
+    $toggle = "";
+    $default = "hidden";
+    if (file_exists($quiz_file)) {
+        include($quiz_file);
+    } else {
+        $toggle = "hidden";
+        $title = "Invalid Page";
+    }
+    $path = "../";
+    $percent_correct = round($num_correct / count($correct_answers) * 100);
+
 ?></div>
 
-<?php
-    $path = "../";
+<div <?php echo $toggle; ?>><?php
+    
     include($path."assets/php/headnav.php");
-    // Count the number of correct answers
-    $num_correct = $_GET['score'];
-
     // Calculate the percentage of correct answers
-    $percent_correct = round($num_correct / count($correct_answers) * 100);
 
     // Output the results to the user
     echo "<h2>Quiz Results:</h2>";
@@ -30,3 +39,6 @@
     }
     include($path.'assets/php/footer.php');
 ?>
+<div <?php echo $default; ?>>
+    <?php include("invalidrequest.php");?>
+</div>
