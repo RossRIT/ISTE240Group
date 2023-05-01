@@ -24,7 +24,7 @@
         <h3>Unix Architecture</h3>
             <p>Here’s a basic block diagram of the unix architecture:</p>
 
-            <img src="https://www.urbanpro.com/unix-shell-scripting-training/free-session-on-shell-scripting-for-1-day-9632101509" alt="unix diagram">
+            <img src="https://www.tutorialspoint.com/unix/images/unix_architecture.jpg" alt="unix diagram">
             <p>
                 The goal of this website is to learn the basics of Unix to understand functionality and be able to utilize the system. 
                 In addition to giving an overview of content.
