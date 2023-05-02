@@ -33,6 +33,7 @@
                 <div class="dropdown-content">
                     <a href="<?php echo $path?>quizzes/index.php">Quizzes</a>
                     <a href="#">About the Team</a>
+                    <a href="<?php echo $path?>quizzes/study.php">Flashcards</a>
                 </div>
             </li>
         </ul>
