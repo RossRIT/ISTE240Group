@@ -6,20 +6,22 @@
     include($path . "assets/php/headnav.php");
 ?>
 <div class="content-container">
-    <div class="sidebar" style="width:25%">
-        <a href="#" class="sidebar_link">Link 1</a>
-        <a href="#" class="sidebar_link">Link 2</a>
-        <a href="#" class="sidebar_link">Link 3</a>
+    <div class="sidebar">
+        <a href="#grep" class="sidebar_link">grep</a>
+        <a href="#sort" class="sidebar_link">sort</a>
+        <a href="#cat" class="sidebar_link">cat</a>
+        <a href="#head" class="sidebar_link">head</a>
+        <a href="#tail" class="sidebar_link">tail</a>
     </div>
 
-    <div style="margin-left:25%">
+    <div>
         <h1 class="title">Piping and Filters</h1>
             <p>
             These are sets of commands that taken input from a standard input stream i.e. stdin, perform some operations 
             and write output to the standard output stream i.e. stdout. As well as commands used to process text files.
             </p>
             Here are a few helpful commands: </br>
-            <p>
+            <p id="grep">
             <strong>grep</strong> </br>
             Globally Search For Regular Expression and Print out </br>
             grep is a pattern or expression searching command and prints out the found matches </br>
@@ -34,23 +36,23 @@
                     <li>i match both uppercase and lowercase letters</li>
                     <li>l shows just the name of the file with the string</li>
                 </ul>
-            <p>
+            <p id="sort">
             <strong>sort</strong> </br>
                 a data manipulation command that sorts or merges lines in a file by specified fields. 
                 For example, either alphabetically or numerically, default sorting is alphabetical. </br>
                 sort[options] filename
             </p>
-            <p>
+            <p id="cat">
             <strong>cat</strong> </br>
                 places standard input into a file </br>
                 cat > filename
             </p>
-            <p>
+            <p id="head">
             <strong>head</strong> </br>
                 displays the top count lines of files or piped data to standard output, displays 10 lines by default </br>
                 head [options] [file]
             </p>
-            <p>
+            <p id="tail">
             <strong>tail</strong> </br>
                 displays the last count lines of files or piped data to standard output, displays 10 lines by default </br>
                 tail [options] [file] </br>
