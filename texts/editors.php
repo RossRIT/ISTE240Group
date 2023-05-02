@@ -5,18 +5,18 @@
 
     include($path . "assets/php/headnav.php");
 ?>
-<div class="content-container">
-    <div class="sidebar" style="width:25%">
-        <a href="#" class="sidebar_link">Link 1</a>
-        <a href="#" class="sidebar_link">Link 2</a>
-        <a href="#" class="sidebar_link">Link 3</a>
+<div class="content-container">    
+    <div class="sidebar">
+        <a href="#text-mode" class="sidebar_link">text-mode</a>
+        <a href="#gui" class="sidebar_link">editors with GUI</a>
+        <a href="#wysiwyg" class="sidebar_link">WYSIWYG editors</a>
     </div>
 
-    <div style="margin-left:25%">
+    <div>
         <h1 class="title">Text Editors</h1>
             <h2>Three Major Groups:</h2>
                 <p>
-                    <h3>text-mode</h3>
+                    <h3 id="text-mode">text-mode</h3>
                         allows for work in a standard terminal or remote SSH connection because the text and the editing interface are both 
                         shown as text. You'll likely need other software to render the results of your work if you're modifying a web page or 
                         program code. However, a great option for editing configuration files!  </br>
@@ -26,14 +26,14 @@
                         <img src="https://meterpreter.org/wp-content/uploads/2020/01/vi-help.png" alt="vi editor">
                 </p>
                 <p>
-                    <h3>editors with GUI</h3>
+                    <h3 id="gui">editors with GUI</h3>
                         still primarily focused on the text editing area, which has a fixed width font for simpler coding. 
                         As a result, menus are easier to access, dialogue windows are more understandable and adaptable, etc. </br>
                         These editors are the most widely used, with editors like VSCode, Atom, Sublime, etc. </br>
                         <img src="https://cdn.jasongaylord.com/images/2020/04/25/vscode.png" alt="vscode">
                 </p>
                 <p>
-                    <h3>WYSIWYG editors</h3>
+                    <h3 id="wysiwyg">WYSIWYG editors</h3>
                     (What You See Is What You Get) </br>
                         are document editors. Such editors allow you to construct a document for subsequent printing or sharing online, 
                         and you may see the finished text as you enter without using any additional software. These editors are the quickest 
