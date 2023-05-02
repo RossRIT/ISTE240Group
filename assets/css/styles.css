@@ -7,12 +7,16 @@ body {
     width: 90%;
     font-family: circularStd;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 16px;
     color: #031927;
 }
 
 img {
     width: 80%;
+}
+
+p{
+    font-size: 18px;
 }
 
 /*fonts*/
