@@ -60,7 +60,7 @@
     $title = "Quiz 1";
     $path = "../";
     $css = $path."assets/css/styles.css";
-
+	$learn = $path."start.php";
     include($path."assets/php/headnav.php");
 ?>
 	<h1>Getting Started Quiz</h1>
