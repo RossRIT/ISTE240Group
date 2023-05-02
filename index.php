@@ -24,17 +24,28 @@
     <div class="mid">
         <div class="secheader">Topics We'll Cover</div>
         <div class="section-container">
-            <!-- TODO add background images + links -->
-            <div class="section">Getting Started</div>
-            <div class="section">Basic Commands</div>
-            <div class="section">Directory and File Management</div>
-            <div class="section">Permissions</div>
-            <div class="section">Piping and Filters</div>
-            <div class="section">Text Editors</div>
+            <div class="section">Getting Started
+                <a href="./start.php">-></a>
+            </div>
+            <div class="section">Basic Commands
+                <a href="./basics/commands.php">-></a>
+            </div>
+            <div class="section">Directory and File Management
+                <a href="./basics/dirnfile.php">-></a>
+            </div>
+            <div class="section">Permissions
+                <a href="./basics/permissions.php">-></a>
+            </div>
+            <div class="section">Piping and Filters
+                <a href="./texts/pipenfilter.php">-></a>
+            </div>
+            <div class="section">Text Editors
+                <a href="./texts/editors.php">-></a>
+            </div>
         </div>
         <div class="questions">
-            <div class="secheader">section</div>
-            <div class="quest">Questionairre</div>
+            <div class="secheader">Quizzes</div>
+            <div class="quest"><a href="./quizzes/">Questionairre</a></div>
         </div>
     </div>
 
