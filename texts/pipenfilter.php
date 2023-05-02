@@ -41,6 +41,11 @@
                 sort[options] filename
             </p>
             <p>
+            <strong>cat</strong> </br>
+                places standard input into a file </br>
+                cat > filename
+            </p>
+            <p>
             <strong>head</strong> </br>
                 displays the top count lines of files or piped data to standard output, displays 10 lines by default </br>
                 head [options] [file]
