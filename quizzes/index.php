@@ -14,12 +14,12 @@
         <div class="secheader">Topics</div>
         <div class="section-container">
             <!-- TODO add background images + links -->
-            <div class="section">Getting Started</div>
-            <div class="section"><a href="quiz1.php">Basic Commands</a></div>
-            <div class="section">Directory and File Management</div>
-            <div class="section">Permissions</div>
-            <div class="section">Piping and Filters</div>
-            <div class="section">Text Editors</div>
+            <div class="section"><a href="quiz1.php">Getting Started</a></div>
+            <div class="section"><a href="quiz2.php">Basic Commands</a></div>
+            <div class="section"><a href="quiz3.php">Directory and File Management</a></div>
+            <div class="section"><a href="quiz4.php">Permissions</a></div>
+            <div class="section"><a href="quiz5.php">Piping and Filters</a></div>
+            <div class="section"><a href="quiz6.php">Text Editors</a></div>
         </div>
     </div>
 
